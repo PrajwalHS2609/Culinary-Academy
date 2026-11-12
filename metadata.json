@@ -1,0 +1,6 @@
+{
+  "name": "Vance Culinary Academy",
+  "description": "Premium cooking classes, master workshops, and professional culinary arts academy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
