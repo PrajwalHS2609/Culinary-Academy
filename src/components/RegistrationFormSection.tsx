@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ACADEMY_CLASSES } from '../data/academyData';
 import { CheckCircle, Clock, MapPin, Mail, Phone, Calendar, ArrowRight, ShieldCheck, Download } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface RegistrationFormProps {
   preselectedClassId?: string;
@@ -82,7 +83,7 @@ export const RegistrationFormSection: React.FC<RegistrationFormProps> = ({
       <section className="relative w-full bg-[#252525] text-[#FAF5EC] py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="/src/assets/images/studio_kitchen_interior_1794379324599.jpg"
+            src={IMAGES.studio}
             alt="Vance Culinary Studio background"
             className="w-full h-full object-cover"
           />

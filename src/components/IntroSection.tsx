@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Flame, Compass, HeartHandshake, Sparkles } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface IntroSectionProps {
   onLearnMore: () => void;
@@ -17,7 +18,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onLearnMore }) => {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-lg overflow-hidden border border-[#252525]/10 bg-stone-100 shadow-sm">
               <img
-                src="/src/assets/images/studio_kitchen_interior_1794379324599.jpg"
+                src={IMAGES.studio}
                 alt="Inside the sunlit Vance Culinary Academy kitchen studio with marble prep islands and copper hoods"
                 referrerPolicy="no-referrer"
                 className="w-full h-[420px] sm:h-[500px] object-cover"

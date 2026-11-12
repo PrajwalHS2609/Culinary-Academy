@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Calendar, Sparkles, Award, Users, Utensils } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 interface HeroSectionProps {
   onExploreClasses: () => void;
@@ -78,7 +79,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-lg overflow-hidden border border-[#252525]/10 bg-stone-200 shadow-md">
               <img
-                src="/src/assets/images/hero_culinary_academy_1794379322666.jpg"
+                src={IMAGES.hero}
                 alt="Master Chef coaching adult students in the sunlit Vance Culinary Academy studio kitchen"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] lg:h-[520px] object-cover hover:scale-[1.01] transition-transform duration-700"

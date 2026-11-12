@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { STUDIO_FEATURES } from '../data/academyData';
 import { Check, Eye, Maximize2, Sparkles, Utensils } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 export const StudioSection: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState<number>(0);
@@ -38,7 +39,7 @@ export const StudioSection: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="relative rounded-lg overflow-hidden border border-[#252525]/10 bg-stone-200 shadow-md">
               <img
-                src="/src/assets/images/studio_kitchen_interior_1794379324599.jpg"
+                src={IMAGES.studio}
                 alt="Architectural photo of the Vance Culinary Academy studio with exposed timber beams and stainless cooking stations"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] object-cover"

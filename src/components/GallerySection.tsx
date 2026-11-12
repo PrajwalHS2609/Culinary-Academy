@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Camera, Sparkles, Utensils } from 'lucide-react';
+import { IMAGES } from '../assets/images';
 
 export const GallerySection: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'pasta' | 'spices' | 'studio'>('all');
@@ -10,7 +11,7 @@ export const GallerySection: React.FC = () => {
       title: 'Handmade Ricotta & Herb Tortelloni',
       author: 'Student Creation · Italian Pasta Cohort',
       category: 'pasta',
-      image: '/src/assets/images/dish_handmade_pasta_1794379323716.jpg',
+      image: IMAGES.pasta,
       aspect: 'tall',
       note: 'Plated with crispy mountain sage and 24-month Parmigiano emulsified butter.',
     },
@@ -19,7 +20,7 @@ export const GallerySection: React.FC = () => {
       title: 'Old Delhi Dum Murgh Makhani & Naan',
       author: 'Student Creation · Regional Spices Cohort',
       category: 'spices',
-      image: '/src/assets/images/dish_indian_curry_1794379325869.jpg',
+      image: IMAGES.curry,
       aspect: 'wide',
       note: 'Finished with toasted star anise, cream swirl, and scorched garlic naan.',
     },
@@ -28,7 +29,7 @@ export const GallerySection: React.FC = () => {
       title: 'Student Vegetable Fabrication Drills',
       author: 'Action Shot · Knife Skills Atelier',
       category: 'studio',
-      image: '/src/assets/images/hero_culinary_academy_1794379322666.jpg',
+      image: IMAGES.hero,
       aspect: 'wide',
       note: 'Mastering uniform brunoise cuts under the guidance of Chef Elena Vance.',
     },
@@ -37,7 +38,7 @@ export const GallerySection: React.FC = () => {
       title: 'Morning Prep at the Induction Islands',
       author: 'Behind the Scenes · San Francisco Studio',
       category: 'studio',
-      image: '/src/assets/images/studio_kitchen_interior_1794379324599.jpg',
+      image: IMAGES.studio,
       aspect: 'tall',
       note: 'Individual marble stations ready for the morning viennoiserie turn.',
     },

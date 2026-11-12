@@ -1,3 +1,5 @@
+import { IMAGES } from '../assets/images';
+
 export interface CookingClass {
   id: string;
   title: string;
@@ -99,7 +101,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 135,
     instructor: 'Chef Elena Vance',
     maxStudents: 8,
-    image: '/src/assets/images/hero_culinary_academy_1794379322666.jpg',
+    image: IMAGES.hero,
     featuredDish: 'Hand-Cut Velouté & Mirepoix Reduction',
     skillsAcquired: [
       'Pinch grip and rolling chop ergonomics',
@@ -130,7 +132,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 155,
     instructor: 'Chef Rohan Kapoor',
     maxStudents: 8,
-    image: '/src/assets/images/dish_indian_curry_1794379325869.jpg',
+    image: IMAGES.curry,
     featuredDish: 'Slow-Simmered Old Delhi Murgh Makhani & Garlic Naan',
     skillsAcquired: [
       'The chemistry of Tadka (hot oil spice blooming)',
@@ -162,7 +164,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 160,
     instructor: 'Chef Marco Valenti',
     maxStudents: 8,
-    image: '/src/assets/images/dish_handmade_pasta_1794379323716.jpg',
+    image: IMAGES.pasta,
     featuredDish: 'Ricotta & Wild Herb Tortelloni with Sage Brown Butter',
     skillsAcquired: [
       'Gluten development and rest cycles in pasta sheets',
@@ -194,7 +196,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 175,
     instructor: 'Chef Amara Chen',
     maxStudents: 8,
-    image: '/src/assets/images/studio_kitchen_interior_1794379324599.jpg',
+    image: IMAGES.studio,
     featuredDish: 'Honeycomb Croissants & Dark Chocolate Éclairs',
     skillsAcquired: [
       'Tourage (lamination turns) and butter elasticity',
@@ -225,7 +227,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 140,
     instructor: 'Chef Elena Vance',
     maxStudents: 8,
-    image: '/src/assets/images/hero_culinary_academy_1794379322666.jpg',
+    image: IMAGES.hero,
     featuredDish: 'Miso-Glazed Roasted Cauliflower Steak & Green Tahini',
     skillsAcquired: [
       'Maillard browning on vegetable surfaces without excess fat',
@@ -255,7 +257,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 320,
     instructor: 'Chef Elena Vance',
     maxStudents: 6,
-    image: '/src/assets/images/chef_instructor_portrait_1794379325988.jpg',
+    image: IMAGES.chef,
     featuredDish: 'Pan-Roasted Duck Breast with Cherry Port Reduction',
     skillsAcquired: [
       'The 5 French Mother Sauces & secondary compound derivatives',
@@ -285,7 +287,7 @@ export const ACADEMY_CLASSES: CookingClass[] = [
     price: 195,
     instructor: 'Chef Marco Valenti & Team',
     maxStudents: 16,
-    image: '/src/assets/images/studio_kitchen_interior_1794379324599.jpg',
+    image: IMAGES.studio,
     featuredDish: 'Wood-Fired Herb Roasted Porchetta & Artisanal Focaccia',
     skillsAcquired: [
       'Coordinated kitchen station division and brigade timing',
@@ -396,7 +398,7 @@ export const ACADEMY_CHEFS: Chef[] = [
     name: 'Elena Vance',
     role: 'Executive Culinary Director & Founder',
     experience: '22 Years of Culinary Leadership',
-    portrait: '/src/assets/images/chef_instructor_portrait_1794379325988.jpg',
+    portrait: IMAGES.chef,
     bio: 'Trained at Le Cordon Bleu Paris with executive chef tenures across Michelin-starred kitchens in Lyon and San Francisco. Elena founded Vance Culinary Academy to strip away the intimidation of haute cuisine and replace it with joyful, rigorous, hands-on mastery.',
     accolades: ['Grand Diplôme Le Cordon Bleu Paris', 'James Beard Nominee (Best Regional Chef 2018)', 'Author of "The Instinctive Cook" (2022)'],
     specialty: 'Classical French Technique, Sauce Architecture & Modern Gastronomy',
@@ -408,7 +410,7 @@ export const ACADEMY_CHEFS: Chef[] = [
     name: 'Rohan Kapoor',
     role: 'Master Chef of Indian Gastronomy & Spice Science',
     experience: '16 Years Master of Regional Indian Cuisines',
-    portrait: '/src/assets/images/hero_culinary_academy_1794379322666.jpg',
+    portrait: IMAGES.hero,
     bio: 'Born in Lucknow and trained in historic royal kitchens before helming acclaimed modern Indian restaurants in London and Mumbai. Rohan specializes in the micro-chemistry of whole spice blooming and authentic slow-cooked dum techniques.',
     accolades: ['Culinary Heritage Fellow, New Delhi', 'Guest Lecturer at World Gastronomy Congress', 'Former Head Chef, Tamarind London'],
     specialty: 'Dum Pukht, Artisanal Masala Architecture & Tandoor Baking',
@@ -420,7 +422,7 @@ export const ACADEMY_CHEFS: Chef[] = [
     name: 'Marco Valenti',
     role: 'Head of Artisanal Pasta & Mediterranean Studies',
     experience: '14 Years Master Pasta Maker & Trattoria Executive',
-    portrait: '/src/assets/images/dish_handmade_pasta_1794379323716.jpg',
+    portrait: IMAGES.pasta,
     bio: 'Hailing from Bologna, Marco spent childhood summers at his nonna’s pasta bench before working in Modena and Florence. He brings an infectious passion for Italian regional biodiversity and grain heritage.',
     accolades: ['Bologna Pasta Guild Certified Master', 'Slow Food International Ambassador', 'Featured in "Cucina Contemporanea"'],
     specialty: 'Hand-Rolled Egg Pasta, Wild Herb Fillings & Emulsified Pan Sauces',
@@ -432,7 +434,7 @@ export const ACADEMY_CHEFS: Chef[] = [
     name: 'Amara Chen',
     role: 'Executive Pâtissière & Pastry Instructor',
     experience: '13 Years Viennoiserie & Confectionery Specialist',
-    portrait: '/src/assets/images/studio_kitchen_interior_1794379324599.jpg',
+    portrait: IMAGES.studio,
     bio: 'Former pastry chef at three-star establishments in Tokyo and New York, Amara bridges European classical lamination with delicate Asian botanical infusions.',
     accolades: ['Pastry Champion, Coupe du Monde Regional 2021', 'Certified Master Chocolatier', 'Pastry Arts Magazine Top 10 Educator'],
     specialty: 'Viennoiserie, Laminated Doughs & Single-Origin Chocolate Sculpting',
@@ -611,7 +613,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '5 min read',
     date: 'Nov 8, 2026',
     excerpt: 'Why dragging a dull blade through a countertop pull-through ruins your steel, and how 1,000-grit whetstone water sharpening transforms your cutting precision.',
-    image: '/src/assets/images/hero_culinary_academy_1794379322666.jpg',
+    image: IMAGES.hero,
     content: [
       'Most home cooks believe their knives are made of indestructible metal. In reality, a sharp edge is a microscopic row of teeth only microns thick.',
       'A honing steel does not remove metal; it realigns microscopic rolled teeth back into a straight line. Whetstones, conversely, abrade steel at precise 15-degree angles to produce a hair-splitting apex.',
@@ -625,7 +627,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '6 min read',
     date: 'Oct 30, 2026',
     excerpt: 'Why cold water destroys spice aromatics, and how hot fat unlocks fat-soluble terpenes in cumin, mustard seed, and cardamom.',
-    image: '/src/assets/images/dish_indian_curry_1794379325869.jpg',
+    image: IMAGES.curry,
     content: [
       'Spices are storage capsules of delicate volatile oils. When dropped into water, these compounds remain trapped within cellulose plant walls.',
       'By heating ghee or mustard oil to exactly 175°C (350°F) and introducing whole seeds for 8 to 12 seconds, the outer seed jacket cracks and releases fat-soluble esters directly into the cooking medium.',
@@ -639,7 +641,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '4 min read',
     date: 'Oct 21, 2026',
     excerpt: 'How humidity, yolk protein, and bench resting govern whether your tagliatelle will have that coveted al dente toothsome bite.',
-    image: '/src/assets/images/dish_handmade_pasta_1794379323716.jpg',
+    image: IMAGES.pasta,
     content: [
       'The biggest mistake beginner pasta makers commit is rushing the gluten relaxation stage. After vigorous 10-minute kneading, gluten strands are coiled tight like steel springs.',
       'A minimum 30-minute rest wrapped tightly in parchment allows hydration to equalize through the starch granules and relaxes the gluten matrix.',
